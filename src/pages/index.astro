@@ -1,0 +1,45 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<PageLayout title="Burning Down the House">
+	<div class="intro">
+		<p>This is where the homepage copy will be pasted.</p>
+	</div>
+
+	<div class="actions">
+		<Button href="/read-a-sample" variant="primary">Read a Sample</Button>
+		<Button href="/buy" variant="secondary">Buy the Book</Button>
+	</div>
+</PageLayout>
+
+<style>
+	.intro {
+		margin-bottom: 3rem;
+	}
+
+	.intro p {
+		font-size: 1.125rem;
+		line-height: 1.8;
+	}
+
+	.actions {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	@media (max-width: 768px) {
+		.actions {
+			flex-direction: column;
+		}
+
+		.actions .button {
+			width: 100%;
+			text-align: center;
+		}
+	}
+</style>

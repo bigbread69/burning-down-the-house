@@ -1,0 +1,86 @@
+---
+---
+
+<footer>
+	<div class="email-capture">
+		<h3>Stay Updated</h3>
+		<p>Receive updates about the book and related materials.</p>
+		<form>
+			<input type="email" name="email" placeholder="your.email@example.com" required />
+			<button type="submit">Subscribe</button>
+		</form>
+	</div>
+	<div class="copyright">
+		<p>&copy; {new Date().getFullYear()} Burning Down the House. All rights reserved.</p>
+	</div>
+</footer>
+
+<style>
+	footer {
+		margin-top: 4rem;
+		padding: 3rem 2.5rem 2rem;
+		border-top: 1px solid #1c1f18;
+	}
+
+	.email-capture {
+		max-width: 620px;
+		margin: 0 auto 2.5rem;
+		text-align: center;
+	}
+
+	.email-capture h3 {
+		font-size: 1.4rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.email-capture p {
+		margin-bottom: 1.5rem;
+		color: #9ca3af;
+	}
+
+	.email-capture form {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+
+	.email-capture input {
+		flex: 1;
+		min-width: 240px;
+	}
+
+	.email-capture button {
+		white-space: nowrap;
+		border-radius: 999px;
+	}
+
+	.copyright {
+		text-align: center;
+		padding-top: 1.75rem;
+		border-top: 1px solid rgba(28, 31, 24, 0.5);
+	}
+
+	.copyright p {
+		margin: 0;
+		font-size: 0.85rem;
+		color: #6b7280;
+	}
+
+	@media (max-width: 768px) {
+		footer {
+			padding: 3rem 1.5rem 1.75rem;
+		}
+
+		.email-capture form {
+			flex-direction: column;
+		}
+
+		.email-capture input,
+		.email-capture button {
+			width: 100%;
+		}
+	}
+</style>

@@ -1,0 +1,580 @@
+---
+import PageLayout from '../../components/PageLayout.astro';
+
+const { slug } = Astro.params;
+
+// In a real implementation, you'd fetch the post content from a content collection
+// For now, this is a placeholder structure
+const getPost = (slug: string) => {
+	const posts: Record<string, any> = {
+		'claes-bangs-dracula': {
+			title: "Claes Bang's Dracula: The Charm of the Skin",
+			date: "2026-01-13",
+			content: `
+				<p><em>(Why the most dangerous thing in your life doesn't look dangerous at all.)</em></p>
+				
+				<h2>Not all monsters look like monsters</h2>
+				<p>There are monsters you recognise immediately, the kind the body understands without needing interpretation. They come with claws or teeth or madness in the eyes, they move without manners, and they announce themselves as enemies. But the thing that quietly ruins most human lives does not arrive like that. It does not arrive as terror. It does not arrive as danger. It does not arrive as something the system instinctively rejects.</p>
+				
+				<p>It arrives charming, intelligent, fluent, and strangely familiar. It arrives with good timing. It arrives with the right voice. It arrives like something that might even be on your side.</p>
+				
+				<p>That is why Claes Bang's Dracula works so well. He does not behave like a creature. He behaves like a mechanism wearing charisma like a tailored suit. He is playful, amused, occasionally obscene, and never apologetic, and the genius of the performance is that you can feel his enjoyment. He is not desperate. He is not struggling. He is not fighting for access. He has an ease that suggests something far more unsettling than violence: the sense that he has been here before, that he understands the rules of the human animal, and that he knows exactly where consent lives.</p>
+				
+				<p>You do not feel hunted by him in the ordinary sense. You feel negotiated into surrender. You feel teased into agreement. You feel coaxed into opening the door.</p>
+				
+				<h2>The threshold is always consent</h2>
+				<p>In the old vampire stories there is a rule that matters more than the garlic and the crosses and the stakes.</p>
+				
+				<p>Dracula cannot enter unless he is invited.</p>
+				
+				<p>He may stand outside indefinitely, smiling, patient, entertained, waiting for the smallest opening. He does not break in. He does not force the threshold. He seduces the threshold into welcoming him. And when he finally crosses it, it is not with drama but with entitlement, as if he has always belonged inside. The horror is not simply that he enters. The horror is that you invited him.</p>
+				
+				<p>This is not superstition. It is an insight about mechanism.</p>
+				
+				<h2>Skin, and the Old Companion</h2>
+				<p>In Burning Down the House I use a term: the Skin. It is the survival layer, the protective interface, the set of internal procedures that learned early how to anticipate threat, manage belonging, avoid shame, and preserve the organism. It is not evil. It is not immoral. It is not evidence of weakness. It is simply an adaptive system that has outlived its usefulness, and because it has been present for so long it is often mistaken for the self. It doesn't feel like a mechanism. It feels like a voice.</p>
+				
+				<p>A resident presence. An internal partner. A kind of companion.</p>
+				
+				<p>That is why, in some of the blog writing, I sometimes call it the Old Companion — because that is exactly how it behaves. It does not appear as a demon.</p>
+				
+				<p>It appears as the thing that has always been there, the one who speaks first, the one who explains, the one who predicts, the one who warns, the one who knows.</p>
+				
+				<h2>The charm is not decoration. It is the method.</h2>
+				<p>It is crucial to see this properly. The Skin is not frightening in the way a predator is frightening. It is frightening in the way Claes Bang's Dracula is frightening: because it is so persuasive, so plausible, and so conversational that the host does not experience invasion as invasion.</p>
+				
+				<p>The Skin does not make its demands with crude commands. It does not shout "obey." It does not say "I am ruining you." It says something far more seductive. It says it is being reasonable. It says it is protecting you. It says it is helping you.</p>
+				
+				<p>And because the system has depended on this voice for so long, it grants it authority without question. That is the rent being paid. That is the tenant being fed.</p>
+				
+				<h2>The mechanism enjoys itself</h2>
+				<p>Bang's Dracula enjoys himself. That is one of the most telling features of his portrayal. He is delighted by human frailty. He is entertained by negotiation. He takes pleasure not only in what he takes but in how easily it is given.</p>
+				
+				<p>And the Skin enjoys itself too, in its own way. It loves rehearsal. It loves narration. It loves running the same loops with small variations, like a composer returning again and again to a theme it cannot abandon. It loves predicting humiliation and rehearsing argument and scanning the past for proof and scanning the future for danger. It loves tightening the world down into something manageable. It loves building a case. It loves "being right."</p>
+				
+				<p>The human mistake is to believe this enjoyment is intelligence, to believe this activity is insight, to believe this vigilance is wisdom. In truth it is feeding. It is occupying. It is reproducing itself through attention.</p>
+				
+				<h2>The bite is rarely dramatic</h2>
+				<p>In the stories Dracula does not kill quickly. He drains gradually. A little less colour. A little less vitality. A little more tiredness. Vampirism is horrifying because it looks like life continuing, only thinner.</p>
+				
+				<p>That is precisely what the Skin does. It rarely destroys with one catastrophe. It narrows the person slowly, reasonably, convincingly, until life becomes something that must be managed rather than inhabited. Spontaneity becomes risk. Rest becomes guilt. Joy becomes suspicious. Opportunity becomes threat. Relationships become performance. Work becomes a tribunal. And none of this is announced as tragedy. It is announced as reality.</p>
+				
+				<h2>The final insult: it speaks as you</h2>
+				<p>Then comes the final insult. Dracula does not merely feed. He reproduces himself inside the victim. He turns the bitten into carriers, into extensions of the condition.</p>
+				
+				<p>This is the deepest horror of the Skin. It does not only occupy the inner world. Over time, it begins to speak as the self. It becomes the default narration. It becomes the lens. The person starts living inside its framing without realising that they have been colonised. The Skin's voice becomes the voice of "me." The Skin's caution becomes "character." The Skin's cynicism becomes "truth." The Skin's judgment becomes "discernment."</p>
+				
+				<p>Soon the mechanism is not merely endured; it is carried into rooms, relationships, families, workplaces. It becomes contagious. Not because the person is cruel, but because the person is inhabited.</p>
+				
+				<h2>What kills Dracula?</h2>
+				<p>So, what kills Dracula? Not virtue. Not willpower. Not heroic struggle. Structurally, Dracula is undone by exposure. Sunlight. Visibility. The end of hypnosis. He survives only while he remains in shadow.</p>
+				
+				<p>And the Skin is undone by the same mechanism. It survives only while it remains implicit, unquestioned, fused to identity, mistaken for the self. The moment the mechanism becomes visible as mechanism, it begins to starve. The charm dissolves. The authority weakens. The trance breaks.</p>
+				
+				<h2>The Witness Protocol is sunlight</h2>
+				<p>This is where the Witness Protocol enters, not as a practice to perfect but as a correction of relationship. The Witness Protocol is sunlight. It is not positive thinking. It is not coping. It is not management. It is not negotiation. It is the moment the system notices narration as narration and refuses to step into it. It is the moment the story starts and the person does not follow. It is the moment Dracula smiles at the threshold and the door is not opened. Not because the person becomes stronger, but because the invitation is withheld. The rent is not paid. The tenant is not fed.</p>
+				
+				<h2>Burning Down the House</h2>
+				<p>And this is the snap-back, the part that matters if you understand nothing else: Burning Down the House is not asking you to become fearless. It is not asking you to become better. It is showing you that what you call fear is often simply a tenant narrating. The Skin will keep offering stories. It will keep offering reasons. It will keep arriving dressed as realism. It will keep speaking with intimacy and certainty and the voice of familiarity. It will keep doing it until the mechanism becomes visible.</p>
+				
+				<p>So, the instruction is not heroic. It is simpler than that.</p>
+				
+				<p>When you notice the voice, don't follow it. When you notice the story, don't enter it. When Dracula smiles at the threshold, do not invite him in. That is how the house burns. Quietly. Completely. Without violence. And for the first time in years — perhaps in decades — something else returns. Not a new identity. Not a permanent state. Just your life, unoccupied.</p>
+			`
+		},
+		'alcohol-the-old-companion': {
+			title: "Alcohol, the Old Companion, and the Illusion of Relief",
+			date: "2026-01-12",
+			content: `
+				<p>This piece is not about alcohol in and of itself. Alcohol is only used here because it makes a mechanism visible. What is being described is older and more common: the way a system grants authority to interference, mistakes dread for realism, and lives inside forecasts that feel inevitable. Burning Down the House is not concerned with drinking or abstinence as virtue. It is concerned with the structure by which loops are sustained — and by which they can end.</p>
+				
+				<p><strong><em>Does this ring any bells?</em></strong></p>
+				
+				<p>Not in the form of an episode, or a crisis, or an obvious malfunction — but as a long-standing pressure that has walked beside you for years, quietly narrowing what you believe is possible, and darkening what you are permitted to expect.</p>
+				
+				<p>For some people, there has always been a resident presence.</p>
+				
+				<p>An old companion. A tenant.</p>
+				
+				<p>It does not arrive with spectacle. It does not announce itself as fear. It does not present itself as interference. It presents itself as reason.</p>
+				
+				<ul>
+					<li>It tells you what is realistic for someone like you.</li>
+					<li>It tells you what you deserve.</li>
+					<li>It tells you what you can and cannot do.</li>
+					<li>It tells you which hopes are naïve and which plans are dangerous.</li>
+				</ul>
+				
+				<p>And it does this not by argument, but by certainty. When it speaks, it rarely speaks in words.</p>
+				
+				<p>It speaks through the body.</p>
+				
+				<p>A thud, heavy and immediate, in the solar plexus — as if Thor's hammer has landed in the pit of the stomach — a blunt reminder of limitation. A knowing of impending doom, or, at best, a strict moderation of expectancy. A felt conclusion that says: not for you.</p>
+				
+				<p>Under its influence, the future is not approached as possibility but as hazard. The best ideas are reduced to rubble as soon as they are projected forward. Plans are demolished before they are built. Events are not anticipated; they are endured in advance.</p>
+				
+				<p>And because this companion has lived in the system for so long, it is rarely recognised as anything other than self.</p>
+				
+				<ul>
+					<li>It sounds like you being sensible.</li>
+					<li>It feels like you being realistic.</li>
+					<li>It masquerades as the voice of maturity — the adult correction of childhood wishing.</li>
+					<li>It calls itself truth.</li>
+					<li>It is, in many cases, the main architect of your disappointments.</li>
+				</ul>
+				
+				<p>It collapses relationships by forecasting rejection before intimacy has even been offered. It poisons ambition by describing achievement as exposure. It undermines social ease by presenting every room as a tribunal. It produces comparison as reflex — not the playful comparison of sport, but the bleak arithmetic of deficiency. It turns ability into humiliation and effort into proof that you are behind.</p>
+				
+				<p>It is always there. Not necessarily loud, but always there.</p>
+				
+				<p>And then, at some point, alcohol arrives.</p>
+				
+				<h2>Just when you thought it was safe to think</h2>
+				
+				<p>Alcohol rarely enters as an enemy.</p>
+				
+				<p>It enters as relief. It enters as a temporary loosening of the internal vice. It quietens the thud. It softens the hammer blow. It interrupts the constant internal administration of being someone with limitations. It offers a brief restoration of dynamism — a shift in self-perception in which the body becomes less guarded and the mind less punitive.</p>
+				
+				<p>For a while, you feel more fluent.</p>
+				
+				<ul>
+					<li>More socially capable.</li>
+					<li>Less watched.</li>
+					<li>Less measured.</li>
+					<li>Less condemned by your own comparison.</li>
+				</ul>
+				
+				<p>For a while, you can imagine the future without immediate foreclosure.</p>
+				
+				<p>This is not trivial.</p>
+				
+				<p>It explains why alcohol becomes attractive even to people who remain competent at work, and functional in responsibility. It is not simply intoxication that is sought. It is the temporary suspension of a resident verdict. It is the illusion of a silent tenant. But alcohol does not evict the Old Companion.</p>
+				
+				<p>It sedates it.</p>
+				
+				<p>And in doing so, it weakens the very faculty required to recognise what is happening.</p>
+				
+				<p>The distinction between interference and self is blurred. The system becomes chemically softened into credulity. What should be recognised as weather is treated as instruction. What should be seen as an offer is taken as commander.</p>
+				
+				<p>The Old Companion does not object to this.</p>
+				
+				<ul>
+					<li>It approves.</li>
+					<li>It puts its feet up.</li>
+					<li>It says, in effect: Good. You carry on. Quiet me for now. Blur your perception. Confuse relief with repair. Pretend I have gone home.</li>
+				</ul>
+				
+				<p>And then it waits.</p>
+				
+				<p>Because alcohol's greatest usefulness to the Old Companion is not what it does during intoxication.</p>
+				
+				<p>It is what it does afterwards.</p>
+				
+				<p>For many people, the true cost of drinking is not the next morning.</p>
+				
+				<p>It is the third day.</p>
+				
+				<p>Day one often passes as social indulgence. Day two arrives with some discomfort but retains stability, and so you drink again. Yet by day three, a particular internal climate begins to form.</p>
+				
+				<p>The curtain drops.</p>
+				
+				<p>The mind becomes crowded with hostile movements. Dark mood. Dark thoughts. Dread without object. Disappointment without evidence. A felt certainty that something bad is coming, and that it will be your fault.</p>
+				
+				<p>And because the body mobilises, the mind treats mobilisation as proof.</p>
+				
+				<p>It is as though the head becomes filled with a devil and twenty-seven demons — not as spiritual fantasy, but as plain description of what occurs when a chemically destabilised system begins to generate offers at speed, without the braking mechanism of clear witnessing.</p>
+				
+				<p>In this state, the Old Companion is harder to detect, because everything feels poisoned. The system cannot discriminate. You cannot tell whether the voice you are hearing is the resident, or the chemical tide still sloshing through the machinery. The result is always the same: authority is granted. Identification returns. The loops extend. The narration speaks as though it is sovereign.</p>
+				
+				<p>And this is where the trap becomes self-sustaining.</p>
+				
+				<p>For alcohol does not simply create a bad day.</p>
+				
+				<p>It creates a rebound period in which dread becomes persuasive, self-loathing becomes coherent, and failure becomes inevitable.</p>
+				
+				<p>It creates days — four or five, sometimes more — in which the system wakes each morning already under verdict, chased by a sense of waste, unfulfilled obligation, humiliation, and doom.</p>
+				
+				<p>It is a torment worthy of Hades, not because life has worsened, but because the mind has been given false authority.</p>
+				
+				<p>Many people drink again here. Not for pleasure. For escape.</p>
+				
+				<p>They drink before clarity returns, and they call this lifestyle. They live in permanent partial recovery, never letting the system clear enough to reveal its natural function.</p>
+				
+				<p>If sobriety is maintained, the storm eventually lifts.</p>
+				
+				<ul>
+					<li>Clarity returns.</li>
+					<li>Willingness returns.</li>
+					<li>The mind becomes usable again.</li>
+					<li>And for a brief period, this feels like the end of the story.</li>
+				</ul>
+				
+				<p>Then the true problem reappears.</p>
+				
+				<ul>
+					<li>Quietly.</li>
+					<li>Without theatrics.</li>
+					<li>Without devils.</li>
+					<li>The thud returns.</li>
+					<li>The hammer falls again in the solar plexus, not as panic but as certainty.</li>
+				</ul>
+				
+				<p>The Old Companion wakes fully and resumes its tenancy.</p>
+				
+				<p>It begins once more to moderate expectancy. It begins once more to treat the future as hazard. It begins once more to invalidate good outcomes by presenting them as incompatible with reality. Friends suggest events and the system immediately offers a future in which those events cannot occur. You project forward a year and it becomes active, eager, authoritative — painting the darkest horizon it can find, not as one possibility among many, but as inevitability.</p>
+				
+				<p>And because the chemistry is now clean, the Old Companion becomes persuasive again.</p>
+				
+				<ul>
+					<li>It sounds reasonable.</li>
+					<li>It sounds sober.</li>
+					<li>It sounds like the voice of experience.</li>
+				</ul>
+				
+				<p>It clears its throat and says: Honey, I'm home.</p>
+				
+				<p>This is the point at which many people misread what has happened. They believe they have "returned to themselves." They have not.</p>
+				
+				<p>They have returned to baseline — and baseline contains a resident.</p>
+				
+				<p>Alcohol did not create that resident. It merely made it louder, more dramatic, and harder to recognise. It offered temporary silence and then returned you to the same tenancy agreement with compound interest.</p>
+				
+				<p>This is why most attempts to fix the problem fail.</p>
+				
+				<p>People attempt to correct the content of thought. They attempt to replace gloomy forecasts with positive forecasts. They attempt to argue with dread, to persuade the mind, to overpower the resident with will.</p>
+				
+				<p>Yet the Old Companion is not a rational claim. It is an authority claim. It does not win through evidence. It wins through identification. And if identification is withdrawn, its power collapses.</p>
+				
+				<p>This is the hard instruction, and it is far simpler than the mind will allow itself to believe: see the offer, refuse identification, and allow the loop to close.</p>
+				
+				<ul>
+					<li>Not as optimism.</li>
+					<li>Not as denial.</li>
+					<li>As structural act.</li>
+				</ul>
+				
+				<p>You do not need to fight the thought. To fight it is merely to join it. You do not need to resolve the feeling. To resolve it is often to prolong it. You do not need to silence the resident. You only need to stop granting it the right to command.</p>
+				
+				<ul>
+					<li>When the thud arrives, you witness it.</li>
+					<li>You do not accept it as truth.</li>
+					<li>You do not sign it as identity.</li>
+					<li>You do not obey it as prophecy.</li>
+				</ul>
+				
+				<p>And if you do this repeatedly, the system learns — in the only language it respects — that this pattern no longer produces reward. The old companion repeats less, not because it has been persuaded, but because it has become pointless.</p>
+				
+				<p>A tenant stays when rent is paid. It leaves when nothing feeds it.</p>
+				
+				<h2>Observation without identification (The Witness Protocol) is not a magic bullet</h2>
+				
+				<p>There is, however, one honest caveat.</p>
+				
+				<p>A companion this old does not vacate on the strength of a single insight.</p>
+				
+				<p>For many people — me included — it has lived so long in the machinery that it has been indistinguishable from reality, both current and future. It has felt like reason. It has felt like maturity. It has felt like the inevitable correction of hope.</p>
+				
+				<ul>
+					<li>So this is not written as a victory speech.</li>
+					<li>It is written as a structural recognition.</li>
+				</ul>
+				
+				<p>And recognition is the true turning point. Because what is finally seen clearly can finally be met correctly.</p>
+				
+				<p>Alcohol will not help this.</p>
+				
+				<p>Alcohol temporarily quietens the companion, but only by weakening the very capacity required to evict it. It offers dynamism in exchange for discernment. It offers silence in exchange for authority loss.</p>
+				
+				<ul>
+					<li>It does not merely add noise.</li>
+					<li>It makes the noise believable.</li>
+				</ul>
+				
+				<p>And no one can build a clean life while living inside believable dread.</p>
+				
+				<h2>Closing</h2>
+				
+				<p>The Old Companion is not defeated by optimism. It is not persuaded by logic. It does not leave because you have become "better". It leaves only when you cease feeding it the thing it requires: authority. Alcohol will not help you here. Alcohol quietens the tenant only by weakening the very faculty that could end its tenancy. The work is cleaner than that. See the offer. Refuse identification. Let the loop close. Do it again. And again. Until the residence that has been treated as home is burned down to the ground — not in drama, not in violence, not in spiritual theatre — but by the simplest and most final act a human being can perform: to stop obeying what is not true.</p>
+			`
+		},
+		'the-solar-field': {
+			title: "The Solar Field",
+			date: "2026-01-12",
+			content: `
+				<h2>1) The environment you are already in</h2>
+				<p>If what follows produces a reflex to disagree, to correct, to demand citations, or to offer criticism, you may set that impulse aside.</p>
+				<p>I am not attempting to win a debate.</p>
+				<p>I am not asking for your agreement, and I have no interest in criticism on this matter.</p>
+				<p>This is simply the framework that best answers questions I have pondered over decades — questions about evolution, adaptation, meaning, coherence, and the strange capacity of thought to damage a life more thoroughly than life itself ever does. It gives me a platform from which the human condition can be examined as mechanism rather than as morality, failure, or fate.</p>
+				<p>The first correction is simple.</p>
+				<p>Most people imagine the Sun as an object in space, and space as "the nothing" between objects.</p>
+				<p>This is a useful picture for school diagrams.</p>
+				<p>It is a disastrous picture for understanding the conditions of being alive.</p>
+				<p>Human beings do not live on a planet in isolation. They live inside a dominant environment — energetic, gravitational, electromagnetic, and temporal — generated by the Sun. If the Sun is removed, nothing required for complex life remains: no stable temperature range, no atmosphere, no oceans, no photosynthesis, no oxygen chemistry, no biosphere capable of sustaining nervous systems or thought.</p>
+				<p>This is not philosophy. It is physics.</p>
+				<p>And it implies something both obvious and rarely absorbed: we do not merely live under the Sun.</p>
+				<p>We live within its field.</p>
+				
+				<h2>2) The Solar System is not "many things" — it is one thing</h2>
+				<p>The Solar System is not a collection of independent bodies floating together in neutral space.</p>
+				<p>It is one dominant mass and a thin remainder orbiting within its rule.</p>
+				<p>The Sun contains approximately 99.8% of the total mass of the Solar System.</p>
+				<p>The planets, moons, asteroids, comets, and dust amount to the remaining fraction.</p>
+				<p>And even that remainder is not "other" in any meaningful sense: it is the residue of the same solar nebula — material that did not become Sun but could only become anything at all because the Sun formed first and defined the system. NASA's descriptions of Solar System formation say this plainly: most of the nebula's material collapsed toward the centre to form the Sun; much of the remaining material formed the orbiting bodies.</p>
+				<p>Even at the far boundary — the distant Oort Cloud — the defining condition is still solar gravity.</p>
+				<p>This means that from the centre outward, what we call "the Solar System" is overwhelmingly solar: solar mass, solar gravity, solar radiation, solar magnetism. Everything else is carried within that.</p>
+				<p>So when the Solar Field is named, it is not an act of imagination.</p>
+				<p>It is simply an acknowledgement of what is already the case:</p>
+				<p>there is nothing of value to our lives that is not the Sun, and nothing that does not live and move and have its being within the influence of the Solar Field.</p>
+				<p>Not as poetry. As accounting.</p>
+				
+				<h2>3) Scale (not poetry — measurement)</h2>
+				<p>The same dominance appears in energy terms.</p>
+				<p>The Sun's luminosity is defined (nominally) as approximately 3.828 × 10²⁶ watts. Every second, nuclear fusion converts millions of tonnes of matter into energy — roughly 4.3 million tonnes per second — released as electromagnetic radiation propagating outward through the Solar Field.</p>
+				<p>At Earth's distance, the measured incoming solar energy at the top of the atmosphere — the so-called solar constant / total solar irradiance — is approximately 1,361 W/m².</p>
+				<p>That number is not trivia.</p>
+				<p>It is the power input that drives weather and climate, enables photosynthesis, structures ecosystems, and entrains the biological clocks that govern sleep, hormone release, metabolism, and repair.</p>
+				<ul>
+					<li>Day and night are solar phenomena.</li>
+					<li>Seasons are solar phenomena.</li>
+					<li>Even time, as it is lived biologically, is solar time.</li>
+					<li>Every calorie you metabolise is sunlight delayed.</li>
+					<li>Every breath you take depends on oxygen produced through chemical pathways powered by sunlight.</li>
+				</ul>
+				<p>Life does not use solar energy the way a machine uses fuel. Life is solar energy held in form long enough to become local.</p>
+				
+				<h2>4) The Solar Field defined</h2>
+				<p>For the purposes of this enquiry, this total environment will be named the Solar Field.</p>
+				<p>The Solar Field is the complete energetic, gravitational, electromagnetic, and temporal environment generated by the Sun — extending outward through the heliosphere and into the outer reach of its domain.</p>
+				<ul>
+					<li>The important point is not the boundary.</li>
+					<li>The important point is that nothing required for human existence lies outside it.</li>
+					<li>The Solar Field is not a metaphor.</li>
+				</ul>
+				<p>It is the condition of your existence.</p>
+				<p>And what we call "organism" is simply where Solar Field influence becomes structured, local, biochemical, and briefly self-aware.</p>
+				<p>There is no clean point where "Sun" ends, and "life" begins.</p>
+				<p>There is only continuity: energy transforming into chemistry, chemistry into structure, structure into metabolism, metabolism into sensation.</p>
+				
+				<h2>5) Variability, not constancy</h2>
+				<p>The Sun is not static.</p>
+				<p>It exhibits cycles, sunspots, flares, coronal mass ejections, and measurable variation. The outputs are observable and consequential. We correlate solar activity with geomagnetic storms, atmospheric disturbances, satellite disruptions, radio blackouts, and power-grid failures.</p>
+				<p>We already accept that solar behaviour measurably affects our infrastructure.</p>
+				<p>Which makes a familiar omission hard to justify: the human nervous system is electrochemical and electrically excitable. The brain operates through gradients and charge differentials.</p>
+				<p>Human experience is carried by signal.</p>
+				<p>Yet culturally we pretend that the dominant electromagnetic environment of our existence is irrelevant to our biology, neurology, and emotion.</p>
+				<p>That assumption is not scientific. It is merely habitual.</p>
+				
+				<h2>6) The question we rarely ask</h2>
+				<p>If solar variation can disrupt electronics, alter atmospheric behaviour, and impose measurable effects on technological systems, then it is not a serious position to assume that human beings — built of charge, signal, rhythm, and field sensitivity — are somehow exempt.</p>
+				<p>The question is not philosophical. It is not mystical. It is practical: what does the Solar Field do to us?</p>
+				<p>Biologically. Neurologically. Emotionally.</p>
+				<p>The answer does not require romance.</p>
+				<p>It requires a willingness to stop treating the human being as separate from conditions. Because separation is the original misunderstanding — and that misunderstanding carries a cost.</p>
+				<p>When the Solar Field is misunderstood, the individual feels isolated.</p>
+				<ul>
+					<li>Isolation breeds vigilance.</li>
+					<li>Vigilance breeds narration.</li>
+					<li>Narration breeds interference.</li>
+				</ul>
+				<p>And the human condition begins, not with trauma or failure, but with misorientation: a local system behaving as if it were alone inside its own story.</p>
+				
+				<h2>7) Responsiveness, not romance</h2>
+				<p>At this point, most people fall into one of two habits.</p>
+				<p>They either become mystical — turning the responsiveness of life into theology — or they become dismissive, reducing everything to accident and projection.</p>
+				<p>Neither is required.</p>
+				<p>There is a third option: to look at what life actually does. Life responds.</p>
+				<p>Not in the sense of cosmic intention, and not in the sentimental sense of guidance — but in the plain biological sense that organisms alter expression in response to conditions.</p>
+				<p>This is visible everywhere, once it is seen as a principle rather than a set of disconnected facts.</p>
+				<p>Aphids grow wings. Not as a slow evolutionary march that takes millennia to notice, but as a response to context: overcrowding, stress cues, predator signals. The organism does not merely mutate randomly and hope for selection. It expresses a different form when a different form is required.</p>
+				<p>We have names for this. We can map the pathways. We can observe the mechanisms. But naming mechanisms does not dissolve the underlying fact. The organism is coupled to its environment. It is not merely shaped by the environment after the fact. It is shaped through the environment, and it adjusts in relation to it.</p>
+				<p>Once this is admitted, the simplistic story of blind randomness begins to look like a partial account rather than a full explanation.</p>
+				<ul>
+					<li>Evolution remains real.</li>
+					<li>Natural selection remains real.</li>
+				</ul>
+				<p>But the deeper pattern looks less like chaos and more like feedback. The machinery may be random at the micro-level. But what results is not random behaviour.</p>
+				<p>It is response.</p>
+				
+				<h2>8) Consciousness is conditional (and therefore lawful)</h2>
+				<p>Here it becomes necessary to strip away another romantic misunderstanding: the idea that consciousness is special.</p>
+				<p>"Special" things invite protection. They attract belief. They gather stories around themselves — and stories are precisely what this work has been dismantling from the beginning.</p>
+				<ul>
+					<li>Consciousness is not a thing hidden inside the body.</li>
+					<li>It is not an object.</li>
+					<li>It is not a traveller passing through forms.</li>
+					<li>It is not a cosmic intelligence peering out through human eyes.</li>
+				</ul>
+				<p>These ideas persist because they comfort identity. They suggest importance. They imply permanence.</p>
+				<p>But the structure of consciousness itself does not support the romance.</p>
+				<p>Fire does not exist as an entity. There is no particle of flame. There are only conditions: fuel, oxygen, heat, balance, environment.</p>
+				<p>When conditions align, fire appears. When conditions do not align, fire does not appear.</p>
+				<p>Nothing has travelled. Nothing is missing. Nothing has been stolen.</p>
+				<p>The phenomenon simply no longer arises. Consciousness behaves in the same way. When the conditions are present, experience appears. When they are not, it does not.</p>
+				<p>And that fact is one of the quiet hinge points of the entire book: if consciousness were fundamental, interference would not matter. It would shine through regardless.</p>
+				<p>But interference matters enormously. Which tells us exactly what we need to know.</p>
+				<p>Consciousness is conditional. And conditional phenomena are lawful — not crude, not simplistic, but reliable enough to work with.</p>
+				
+				<h2>9) Coherence: when the system stops pulling against itself</h2>
+				<p>If consciousness is conditional, the most relevant question becomes obvious.</p>
+				<p>What are the conditions?</p>
+				<p>Not metaphysically. Mechanistically. The answer begins with coherence.</p>
+				<p>Coherence is not a belief. It is not a state of mind. It is not something to be achieved.</p>
+				<p>It simply describes what happens when the parts of the system stop pulling against one another.</p>
+				<ul>
+					<li>When thought is no longer arguing with emotion.</li>
+					<li>When emotion is no longer tightening the body.</li>
+					<li>When the body is no longer resisting the moment.</li>
+					<li>When attention is no longer being scattered by narration.</li>
+				</ul>
+				<p>Nothing mystical occurs. Nothing is added. The system simply stops wasting energy on internal opposition. Most people treat incoherence as a personal flaw.</p>
+				<p>It is not.</p>
+				<p>It is a set of conditions. And conditions can change.</p>
+				
+				<h2>10) Flow: coherence in motion</h2>
+				<p>Flow is coherence in motion. It is not a place you enter. It is not something you summon with the correct mentality. Flow appears when nothing is in the way. When attention is no longer being pulled apart. When the body is no longer braced. When thought is no longer commenting on itself.</p>
+				<p>Action begins to unfold without supervision, not because effort has increased, but because interference has fallen away.</p>
+				<p>Flow feels effortless even when the task is demanding because effort has not disappeared. Friction has.</p>
+				<p>There is no second voice asking whether this is right. No running commentary on performance. No background panic about outcome or identity. Energy previously spent on internal negotiation becomes available for movement.</p>
+				<p>Flow is often described as fragile. It is not fragile.</p>
+				<p>It is intolerant of internal noise.</p>
+				<p>External conditions can be intense, chaotic, even hostile, and flow can still arise. What it cannot coexist with is constant self-reference — the small, quiet insistence that the self must remain present as monitor, judge, and narrator.</p>
+				<p>Flow does not tolerate supervision. And this is why it cannot be pursued.</p>
+				<p>The moment flow becomes a goal, attention splits.</p>
+				<ul>
+					<li>One part acts.</li>
+					<li>Another part watches.</li>
+					<li>And coherence thins.</li>
+				</ul>
+				
+				<h2>11) Prayer and faith: stripped of romance, returned to mechanism</h2>
+				<p>This is where modern people tend to become embarrassed.</p>
+				<p>The subject has been surrounded by superstition for so long that many assume the only honest response is dismissal. But dismissal is not understanding.</p>
+				<p>The question is not whether a deity can be convinced.</p>
+				<p>The question is what happens to the human system when it enters a posture of prayer?</p>
+				<p>If prayer works at all, it is unlikely to work as cosmic bargaining.</p>
+				<ul>
+					<li>It works as coherence.</li>
+					<li>It stabilises internal signal.</li>
+				</ul>
+				<p>It brings attention, expectation, emotion, posture, and meaning into alignment. It reduces internal conflict. It reduces fragmentation. It quietens the supervision reflex.</p>
+				<p>If the system becomes coherent, it functions better.</p>
+				<p>Not because the universe is sentimental. Because coherence is not mystical. It is mechanical.</p>
+				<p>It is simply what happens when interference drops. This is the only form of "faith" worth taking seriously: not belief in doctrine, but confidence in response.</p>
+				<p>A quiet willingness to meet experience without the endless internal tribunal.</p>
+				
+				<h2>12) The reversal (and why this matters)</h2>
+				<p>Once Solar Field, coherence, and flow are understood together, the old picture of the human condition begins to collapse.</p>
+				<p>The individual is not a lonely thinker on a rock.</p>
+				<p>The individual is a local system inside a dominant field, continuously shaped by conditions — energetic, biological, emotional, interpretive.</p>
+				<p>Most suffering commonly blamed on life itself is simply the cost of misorientation:</p>
+				<ul>
+					<li>isolation breeds vigilance.</li>
+					<li>vigilance breeds narration.</li>
+					<li>narration breeds interference.</li>
+					<li>and interference becomes identity.</li>
+				</ul>
+				<p>This book does not ask you to improve identity. It does not ask you to decorate it, refine it, or elevate it. It describes something simpler: the system functions when it is not interfered with.</p>
+				<p>Coherence is not an achievement. Flow is not magic. Witnessing is not spiritual.</p>
+				<p>They are all expressions of the same structural fact: when the internal noise is not obeyed, life returns to contact.</p>
+				<p>And with that recognition, one last question becomes unavoidable.</p>
+				<p>If the Solar Field is the environment-side of the interface — the field in which life arises and responds — then what is the human-side receiver?</p>
+				<p>What is the internal physiology through which meaning becomes biology?</p>
+				<ul>
+					<li>How does thought become state?</li>
+					<li>How does expectation become behaviour?</li>
+					<li>How does interpretation become experience?</li>
+				</ul>
+				<p>A Victorian judge noticed this interface and described it with unsettling precision.</p>
+				<p>That judge was Thomas Troward.</p>
+				<p>That is where we go next.</p>
+			`
+		}
+	};
+	return posts[slug];
+};
+
+const post = getPost(slug || '');
+
+if (!post) {
+	return Astro.redirect('/blog');
+}
+---
+
+<PageLayout title={`${post.title} - Blog - Burning Down the House`}>
+	<article class="blog-post">
+		<header class="post-header">
+			<h1>{post.title}</h1>
+			<time datetime={post.date} class="post-date">
+				{new Date(post.date).toLocaleDateString('en-US', { 
+					year: 'numeric', 
+					month: 'long', 
+					day: 'numeric' 
+				})}
+			</time>
+		</header>
+
+		<div class="post-content" set:html={post.content} />
+
+		<nav class="post-nav">
+			<a href="/blog">← Back to Blog</a>
+		</nav>
+	</article>
+</PageLayout>
+
+<style>
+	.post-header {
+		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #1c1f18;
+	}
+
+	.post-header h1 {
+		margin-bottom: 0.75rem;
+	}
+
+	.post-date {
+		display: block;
+		font-size: 0.875rem;
+		color: #666;
+		font-style: italic;
+	}
+
+	.post-content {
+		margin-bottom: 4rem;
+	}
+
+	.post-content h2 {
+		margin-top: 3rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.post-content h3 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.post-content p {
+		margin-bottom: 1.5rem;
+	}
+
+	.post-content ul,
+	.post-content ol {
+		margin-bottom: 1.5rem;
+	}
+
+	.post-nav {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid #1c1f18;
+	}
+
+	.post-nav a {
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.post-nav a:hover {
+		opacity: 0.7;
+	}
+</style>

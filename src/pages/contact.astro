@@ -1,0 +1,98 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+---
+
+<PageLayout title="Contact - Burning Down the House">
+	<h1>Contact</h1>
+	
+	<p>For inquiries about the book, speaking engagements, media requests, or other matters, please use the information below.</p>
+
+	<div class="contact-info">
+		<h2>Email</h2>
+		<p>Placeholder email address will appear here.</p>
+
+		<h2>Mailing Address</h2>
+		<p>Placeholder mailing address will appear here.</p>
+
+		<h2>Media Inquiries</h2>
+		<p>Information for members of the press or media will be provided here.</p>
+
+		<h2>Speaking Engagements</h2>
+		<p>Details about booking speaking engagements or appearances will be listed here.</p>
+	</div>
+
+	<div class="contact-form">
+		<h2>Send a Message</h2>
+		<form>
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required />
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required />
+			</div>
+			<div class="form-group">
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="subject" required />
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="8" required></textarea>
+			</div>
+			<button type="submit">Send Message</button>
+		</form>
+	</div>
+</PageLayout>
+
+<style>
+	.contact-info {
+		margin-bottom: 4rem;
+	}
+
+	.contact-info h2 {
+		margin-top: 2rem;
+		font-size: 1.5rem;
+	}
+
+	.contact-form {
+		margin-top: 4rem;
+		padding-top: 3rem;
+		border-top: 1px solid #1c1f18;
+	}
+
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		font-family: 'Inter', sans-serif;
+		font-size: 1rem;
+		padding: 0.875rem 1rem;
+		border: 1px solid #1a1a1a;
+		background-color: #faf8f5;
+		color: #1a1a1a;
+		width: 100%;
+	}
+
+	textarea {
+		resize: vertical;
+		min-height: 150px;
+	}
+
+	input:focus,
+	textarea:focus {
+		outline: none;
+		border-color: #1a1a1a;
+		box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+	}
+</style>

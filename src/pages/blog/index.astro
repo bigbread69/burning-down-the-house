@@ -1,0 +1,412 @@
+---
+import PageLayout from '../../components/PageLayout.astro';
+
+// In a real implementation, you'd fetch this from a content collection or API
+// For now, this is a placeholder structure
+const posts = [
+	{
+		title: "The Solar Field",
+		date: "2026-01-12",
+		slug: "the-solar-field",
+		excerpt: "If what follows produces a reflex to disagree, to correct, to demand citations, or to offer criticism, you may set that impulse aside. This is simply the framework that best answers questions about evolution, adaptation, meaning, coherence, and the strange capacity of thought to damage a life more thoroughly than life itself ever does."
+	},
+	{
+		title: "Claes Bang's Dracula: The Charm of the Skin",
+		date: "2026-01-13",
+		slug: "claes-bangs-dracula",
+		excerpt: "Not all monsters look like monsters. There are monsters you recognise immediately, the kind the body understands without needing interpretation. But the thing that quietly ruins most human lives does not arrive like that. It arrives charming, intelligent, fluent, and strangely familiar."
+	},
+	// Add more posts here
+];
+---
+
+<PageLayout title="Blog - Burning Down the House">
+	<div class="blog-intro">
+		<span class="intro-label">Intro</span>
+		<h2>Alcohol, the Old Companion, and the Illusion of Relief</h2>
+		<time datetime="2026-01-12" class="blog-date">12 January 2026</time>
+		
+		<div class="intro-preview">
+			<p>This piece is not about alcohol in and of itself. Alcohol is only used here because it makes a mechanism visible. What is being described is older and more common: the way a system grants authority to interference, mistakes dread for realism, and lives inside forecasts that feel inevitable. Burning Down the House is not concerned with drinking or abstinence as virtue. It is concerned with the structure by which loops are sustained — and by which they can end.</p>
+			
+			<button type="button" class="read-more-intro read-more-btn" onclick="const blogIntro = this.closest('.blog-intro'); blogIntro.classList.toggle('expanded'); const allButtons = blogIntro.querySelectorAll('.read-more-intro'); allButtons.forEach(btn => { btn.textContent = blogIntro.classList.contains('expanded') ? 'Read less ↑' : 'Read more →'; });">Read more →</button>
+		</div>
+		
+		<div class="intro-full">
+			<p class="ring-bells">Does this ring any bells?</p>
+			
+			<p>Not in the form of an episode, or a crisis, or an obvious malfunction — but as a long-standing pressure that has walked beside you for years, quietly narrowing what you believe is possible, and darkening what you are permitted to expect.</p>
+			
+			<p>For some people, there has always been a resident presence.</p>
+			
+			<p>An old companion. A tenant.</p>
+			
+			<p>It does not arrive with spectacle. It does not announce itself as fear. It does not present itself as interference. It presents itself as reason.</p>
+			
+			<ul>
+				<li>It tells you what is realistic for someone like you.</li>
+				<li>It tells you what you deserve.</li>
+				<li>It tells you what you can and cannot do.</li>
+				<li>It tells you which hopes are naïve and which plans are dangerous.</li>
+			</ul>
+			
+			<p>And it does this not by argument, but by certainty. When it speaks, it rarely speaks in words.</p>
+			
+			<p>It speaks through the body.</p>
+			
+			<p>A thud, heavy and immediate, in the solar plexus — as if Thor's hammer has landed in the pit of the stomach — a blunt reminder of limitation. A knowing of impending doom, or, at best, a strict moderation of expectancy. A felt conclusion that says: not for you.</p>
+			
+			<p>Under its influence, the future is not approached as possibility but as hazard. The best ideas are reduced to rubble as soon as they are projected forward. Plans are demolished before they are built. Events are not anticipated; they are endured in advance.</p>
+			
+			<p>And because this companion has lived in the system for so long, it is rarely recognised as anything other than self.</p>
+			
+			<ul>
+				<li>It sounds like you being sensible.</li>
+				<li>It feels like you being realistic.</li>
+				<li>It masquerades as the voice of maturity — the adult correction of childhood wishing.</li>
+				<li>It calls itself truth.</li>
+				<li>It is, in many cases, the main architect of your disappointments.</li>
+			</ul>
+			
+			<p>It collapses relationships by forecasting rejection before intimacy has even been offered. It poisons ambition by describing achievement as exposure. It undermines social ease by presenting every room as a tribunal. It produces comparison as reflex — not the playful comparison of sport, but the bleak arithmetic of deficiency. It turns ability into humiliation and effort into proof that you are behind.</p>
+			
+			<p>It is always there. Not necessarily loud, but always there.</p>
+			
+			<p>And then, at some point, alcohol arrives.</p>
+			
+			<h3>Just when you thought it was safe to think</h3>
+			
+			<p>Alcohol rarely enters as an enemy.</p>
+			
+			<p>It enters as relief. It enters as a temporary loosening of the internal vice. It quietens the thud. It softens the hammer blow. It interrupts the constant internal administration of being someone with limitations. It offers a brief restoration of dynamism — a shift in self-perception in which the body becomes less guarded and the mind less punitive.</p>
+			
+			<p>For a while, you feel more fluent.</p>
+			
+			<ul>
+				<li>More socially capable.</li>
+				<li>Less watched.</li>
+				<li>Less measured.</li>
+				<li>Less condemned by your own comparison.</li>
+			</ul>
+			
+			<p>For a while, you can imagine the future without immediate foreclosure.</p>
+			
+			<p>This is not trivial.</p>
+			
+			<p>It explains why alcohol becomes attractive even to people who remain competent at work, and functional in responsibility. It is not simply intoxication that is sought. It is the temporary suspension of a resident verdict. It is the illusion of a silent tenant. But alcohol does not evict the Old Companion.</p>
+			
+			<p>It sedates it.</p>
+			
+			<p>And in doing so, it weakens the very faculty required to recognise what is happening.</p>
+			
+			<p>The distinction between interference and self is blurred. The system becomes chemically softened into credulity. What should be recognised as weather is treated as instruction. What should be seen as an offer is taken as commander.</p>
+			
+			<p>The Old Companion does not object to this.</p>
+			
+			<ul>
+				<li>It approves.</li>
+				<li>It puts its feet up.</li>
+				<li>It says, in effect: Good. You carry on. Quiet me for now. Blur your perception. Confuse relief with repair. Pretend I have gone home.</li>
+			</ul>
+			
+			<p>And then it waits.</p>
+			
+			<p>Because alcohol's greatest usefulness to the Old Companion is not what it does during intoxication.</p>
+			
+			<p>It is what it does afterwards.</p>
+			
+			<p>For many people, the true cost of drinking is not the next morning.</p>
+			
+			<p>It is the third day.</p>
+			
+			<p>Day one often passes as social indulgence. Day two arrives with some discomfort but retains stability, and so you drink again. Yet by day three, a particular internal climate begins to form.</p>
+			
+			<p>The curtain drops.</p>
+			
+			<p>The mind becomes crowded with hostile movements. Dark mood. Dark thoughts. Dread without object. Disappointment without evidence. A felt certainty that something bad is coming, and that it will be your fault.</p>
+			
+			<p>And because the body mobilises, the mind treats mobilisation as proof.</p>
+			
+			<p>It is as though the head becomes filled with a devil and twenty-seven demons — not as spiritual fantasy, but as plain description of what occurs when a chemically destabilised system begins to generate offers at speed, without the braking mechanism of clear witnessing.</p>
+			
+			<p>In this state, the Old Companion is harder to detect, because everything feels poisoned. The system cannot discriminate. You cannot tell whether the voice you are hearing is the resident, or the chemical tide still sloshing through the machinery. The result is always the same: authority is granted. Identification returns. The loops extend. The narration speaks as though it is sovereign.</p>
+			
+			<p>And this is where the trap becomes self-sustaining.</p>
+			
+			<p>For alcohol does not simply create a bad day.</p>
+			
+			<p>It creates a rebound period in which dread becomes persuasive, self-loathing becomes coherent, and failure becomes inevitable.</p>
+			
+			<p>It creates days — four or five, sometimes more — in which the system wakes each morning already under verdict, chased by a sense of waste, unfulfilled obligation, humiliation, and doom.</p>
+			
+			<p>It is a torment worthy of Hades, not because life has worsened, but because the mind has been given false authority.</p>
+			
+			<p>Many people drink again here. Not for pleasure. For escape.</p>
+			
+			<p>They drink before clarity returns, and they call this lifestyle. They live in permanent partial recovery, never letting the system clear enough to reveal its natural function.</p>
+			
+			<p>If sobriety is maintained, the storm eventually lifts.</p>
+			
+			<ul>
+				<li>Clarity returns.</li>
+				<li>Willingness returns.</li>
+				<li>The mind becomes usable again.</li>
+				<li>And for a brief period, this feels like the end of the story.</li>
+			</ul>
+			
+			<p>Then the true problem reappears.</p>
+			
+			<ul>
+				<li>Quietly.</li>
+				<li>Without theatrics.</li>
+				<li>Without devils.</li>
+				<li>The thud returns.</li>
+				<li>The hammer falls again in the solar plexus, not as panic but as certainty.</li>
+			</ul>
+			
+			<p>The Old Companion wakes fully and resumes its tenancy.</p>
+			
+			<p>It begins once more to moderate expectancy. It begins once more to treat the future as hazard. It begins once more to invalidate good outcomes by presenting them as incompatible with reality. Friends suggest events and the system immediately offers a future in which those events cannot occur. You project forward a year and it becomes active, eager, authoritative — painting the darkest horizon it can find, not as one possibility among many, but as inevitability.</p>
+			
+			<p>And because the chemistry is now clean, the Old Companion becomes persuasive again.</p>
+			
+			<ul>
+				<li>It sounds reasonable.</li>
+				<li>It sounds sober.</li>
+				<li>It sounds like the voice of experience.</li>
+			</ul>
+			
+			<p>It clears its throat and says: Honey, I'm home.</p>
+			
+			<p>This is the point at which many people misread what has happened. They believe they have "returned to themselves." They have not.</p>
+			
+			<p>They have returned to baseline — and baseline contains a resident.</p>
+			
+			<p>Alcohol did not create that resident. It merely made it louder, more dramatic, and harder to recognise. It offered temporary silence and then returned you to the same tenancy agreement with compound interest.</p>
+			
+			<p>This is why most attempts to fix the problem fail.</p>
+			
+			<p>People attempt to correct the content of thought. They attempt to replace gloomy forecasts with positive forecasts. They attempt to argue with dread, to persuade the mind, to overpower the resident with will.</p>
+			
+			<p>Yet the Old Companion is not a rational claim. It is an authority claim. It does not win through evidence. It wins through identification. And if identification is withdrawn, its power collapses.</p>
+			
+			<p>This is the hard instruction, and it is far simpler than the mind will allow itself to believe: see the offer, refuse identification, and allow the loop to close.</p>
+			
+			<ul>
+				<li>Not as optimism.</li>
+				<li>Not as denial.</li>
+				<li>As structural act.</li>
+			</ul>
+			
+			<p>You do not need to fight the thought. To fight it is merely to join it. You do not need to resolve the feeling. To resolve it is often to prolong it. You do not need to silence the resident. You only need to stop granting it the right to command.</p>
+			
+			<ul>
+				<li>When the thud arrives, you witness it.</li>
+				<li>You do not accept it as truth.</li>
+				<li>You do not sign it as identity.</li>
+				<li>You do not obey it as prophecy.</li>
+			</ul>
+			
+			<p>And if you do this repeatedly, the system learns — in the only language it respects — that this pattern no longer produces reward. The old companion repeats less, not because it has been persuaded, but because it has become pointless.</p>
+			
+			<p>A tenant stays when rent is paid. It leaves when nothing feeds it.</p>
+			
+			<h3>Observation without identification (The Witness Protocol) is not a magic bullet</h3>
+			
+			<p>There is, however, one honest caveat.</p>
+			
+			<p>A companion this old does not vacate on the strength of a single insight.</p>
+			
+			<p>For many people — me included — it has lived so long in the machinery that it has been indistinguishable from reality, both current and future. It has felt like reason. It has felt like maturity. It has felt like the inevitable correction of hope.</p>
+			
+			<ul>
+				<li>So this is not written as a victory speech.</li>
+				<li>It is written as a structural recognition.</li>
+			</ul>
+			
+			<p>And recognition is the true turning point. Because what is finally seen clearly can finally be met correctly.</p>
+			
+			<p>Alcohol will not help this.</p>
+			
+			<p>Alcohol temporarily quietens the companion, but only by weakening the very capacity required to evict it. It offers dynamism in exchange for discernment. It offers silence in exchange for authority loss.</p>
+			
+			<ul>
+				<li>It does not merely add noise.</li>
+				<li>It makes the noise believable.</li>
+			</ul>
+			
+			<p>And no one can build a clean life while living inside believable dread.</p>
+			
+			<h3>Closing</h3>
+			
+			<p>The Old Companion is not defeated by optimism. It is not persuaded by logic. It does not leave because you have become "better". It leaves only when you cease feeding it the thing it requires: authority. Alcohol will not help you here. Alcohol quietens the tenant only by weakening the very faculty that could end its tenancy. The work is cleaner than that. See the offer. Refuse identification. Let the loop close. Do it again. And again. Until the residence that has been treated as home is burned down to the ground — not in drama, not in violence, not in spiritual theatre — but by the simplest and most final act a human being can perform: to stop obeying what is not true.</p>
+			
+			<button type="button" class="read-more-intro read-less-btn" onclick="const blogIntro = this.closest('.blog-intro'); blogIntro.classList.toggle('expanded'); const allButtons = blogIntro.querySelectorAll('.read-more-intro'); allButtons.forEach(btn => { btn.textContent = blogIntro.classList.contains('expanded') ? 'Read less ↑' : 'Read more →'; });">Read less ↑</button>
+		</div>
+	</div>
+
+	<div class="posts-list">
+		{posts.length > 0 ? (
+			posts.map((post) => (
+				<article class="post-preview">
+					<h2><a href={`/blog/${post.slug}`}>{post.title}</a></h2>
+					<time datetime={post.date} class="post-date">
+						{new Date(post.date).toLocaleDateString('en-US', { 
+							year: 'numeric', 
+							month: 'long', 
+							day: 'numeric' 
+						})}
+					</time>
+					<p class="excerpt">{post.excerpt}</p>
+					<a href={`/blog/${post.slug}`} class="read-more">Read more →</a>
+				</article>
+			))
+		) : null}
+	</div>
+</PageLayout>
+
+<style>
+	.blog-intro {
+		margin-top: 3rem;
+		margin-bottom: 4rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid #1c1f18;
+	}
+
+	.intro-label {
+		display: inline-block;
+		font-size: 0.75rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #9ca3af;
+		margin-bottom: 0.75rem;
+		font-weight: 500;
+	}
+
+	.blog-intro h2 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0;
+	}
+
+	.blog-intro .blog-date {
+		display: block;
+		font-size: 0.875rem;
+		color: #9ca3af;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.blog-intro h3 {
+		font-size: 1.5rem;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.blog-intro ul {
+		margin: 1.5rem 0;
+		padding-left: 2rem;
+	}
+
+	.blog-intro li {
+		margin-bottom: 0.75rem;
+	}
+
+	.blog-intro .ring-bells {
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.intro-full {
+		display: none;
+		margin-top: 1.5rem;
+	}
+
+	.blog-intro.expanded .intro-full {
+		display: block;
+	}
+
+	.read-less-btn {
+		display: none;
+		margin-top: 2rem;
+	}
+
+	.blog-intro.expanded .read-less-btn {
+		display: inline-block;
+	}
+
+	.blog-intro.expanded .read-more-btn {
+		display: none;
+	}
+
+	.read-more-intro {
+		display: inline-block;
+		margin-top: 1.5rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.95rem;
+		color: #c97d5a;
+		font-family: 'Inter', sans-serif;
+		padding: 0;
+	}
+
+	.read-more-intro:hover {
+		opacity: 0.7;
+	}
+
+	.posts-list {
+		margin-top: 3rem;
+	}
+
+	.post-preview {
+		margin-bottom: 4rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid #1c1f18;
+	}
+
+	.post-preview:last-child {
+		border-bottom: none;
+	}
+
+	.post-preview h2 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0;
+	}
+
+	.post-preview h2 a {
+		text-decoration: none;
+		color: #e5e7eb;
+	}
+
+	.post-preview h2 a:hover {
+		opacity: 0.7;
+	}
+
+	.post-date {
+		display: block;
+		font-size: 0.875rem;
+		color: #9ca3af;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.excerpt {
+		margin-bottom: 1rem;
+		color: #e5e7eb;
+	}
+
+	.read-more {
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.95rem;
+		color: #c97d5a;
+	}
+
+	.read-more:hover {
+		opacity: 0.7;
+	}
+</style>

@@ -1,0 +1,81 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<PageLayout title="Buy - Burning Down the House">
+	<h1>Buy the Book</h1>
+	
+	<p>Purchase information and options for obtaining a copy of <em>Burning Down the House</em>.</p>
+
+	<div class="purchase-options">
+		<div class="option">
+			<h2>Hardcover</h2>
+			<p class="price">Placeholder price</p>
+			<p>Description of the hardcover edition, including specifications and availability.</p>
+			<Button href="#" variant="primary">Purchase Hardcover</Button>
+		</div>
+
+		<div class="option">
+			<h2>Paperback</h2>
+			<p class="price">Placeholder price</p>
+			<p>Description of the paperback edition, including specifications and availability.</p>
+			<Button href="#" variant="primary">Purchase Paperback</Button>
+		</div>
+
+		<div class="option">
+			<h2>Ebook</h2>
+			<p class="price">Placeholder price</p>
+			<p>Description of the ebook edition, including format details and compatibility information.</p>
+			<Button href="#" variant="primary">Purchase Ebook</Button>
+		</div>
+	</div>
+
+	<div class="additional-info">
+		<h2>Additional Information</h2>
+		<p>Details about shipping, returns, bulk orders, or other purchasing considerations will appear here.</p>
+	</div>
+</PageLayout>
+
+<style>
+	.purchase-options {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin: 3rem 0;
+	}
+
+	.option {
+		border: 1px solid #1c1f18;
+		padding: 2rem;
+	}
+
+	.option h2 {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.price {
+		font-size: 1.25rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	.option .button {
+		margin-top: 1rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.additional-info {
+		margin-top: 4rem;
+		padding-top: 3rem;
+		border-top: 1px solid #1c1f18;
+	}
+
+	@media (max-width: 768px) {
+		.purchase-options {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,52 @@
+---
+import PageLayout from '../components/PageLayout.astro';
+---
+
+<PageLayout title="Read a Sample - Burning Down the House">
+	<h1>Read a Sample</h1>
+	
+	<p>This page will contain an excerpt from the book, allowing readers to preview the content before purchasing. The sample will be substantial enough to give a genuine sense of the work's style and substance.</p>
+
+	<div class="sample-content">
+		<h2>Chapter One</h2>
+		
+		<p>Placeholder text for the sample chapter will appear here. The excerpt will be formatted exactly as it appears in the book, maintaining the same typography and layout principles.</p>
+
+		<p>The sample will be long enough to provide a meaningful preview, typically several pages or a complete chapter section. Readers will be able to assess the quality and style of the writing before making a purchase decision.</p>
+
+		<p>This preview serves as a demonstration of the book's approach, tone, and intellectual rigor. It will be representative of the work as a whole, giving potential readers an accurate sense of what to expect.</p>
+	</div>
+
+	<div class="actions">
+		<a href="/buy" class="button">Buy the Book</a>
+	</div>
+</PageLayout>
+
+<style>
+	.sample-content {
+		margin: 3rem 0;
+	}
+
+	.actions {
+		margin-top: 4rem;
+		text-align: center;
+	}
+
+	.button {
+		font-family: 'Inter', sans-serif;
+		font-size: 1rem;
+		font-weight: 500;
+		background-color: #1a1a1a;
+		color: #faf8f5;
+		border: none;
+		padding: 0.875rem 2rem;
+		cursor: pointer;
+		text-decoration: none;
+		display: inline-block;
+		transition: opacity 0.2s ease;
+	}
+
+	.button:hover {
+		opacity: 0.85;
+	}
+</style>

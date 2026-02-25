@@ -1,0 +1,106 @@
+---
+const navItems = [
+	{ label: 'Home', path: '/' },
+	{ label: 'About', path: '/about' },
+	{ label: 'Read a Sample', path: '/read-a-sample' },
+	{ label: 'Blog', path: '/blog' },
+	{ label: 'Buy', path: '/buy' },
+	{ label: 'Contact', path: '/contact' },
+];
+---
+
+<nav>
+	<div class="nav-inner">
+		<div class="nav-title">Burning Down the House</div>
+		<ul>
+			{navItems.map((item) => (
+				<li>
+					<a href={item.path}>{item.label}</a>
+				</li>
+			))}
+		</ul>
+	</div>
+</nav>
+
+<style>
+	nav {
+		border-bottom: 1px solid #1c1f18;
+		padding: 1.75rem 2.5rem 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.nav-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.75rem;
+	}
+
+	.nav-title {
+		font-family: 'Crimson Text', Georgia, serif;
+		font-size: 2rem;
+		font-weight: 600;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #f3f4f6;
+		white-space: nowrap;
+		margin-bottom: 0.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgba(28, 31, 24, 0.4);
+		text-align: center;
+		display: inline-block;
+	}
+
+	@media (max-width: 768px) {
+		.nav-title {
+			font-size: 1.5rem;
+		}
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.9rem 1.25rem;
+		justify-content: center;
+	}
+
+	nav li {
+		margin: 0;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-size: 0.875rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: #9ca3af;
+		padding: 0.5rem 1rem;
+		border-radius: 999px;
+		transition: background-color 0.16s ease, color 0.16s ease;
+		font-family: 'Inter', sans-serif;
+	}
+
+	nav a:hover {
+		background-color: rgba(31, 41, 55, 0.9);
+		color: #f9fafb;
+	}
+
+	@media (max-width: 768px) {
+		nav {
+			padding: 1.25rem 1.5rem 1.25rem;
+		}
+
+		.nav-inner {
+			align-items: center;
+		}
+
+		nav ul {
+			justify-content: center;
+		}
+	}
+</style>
