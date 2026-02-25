@@ -1,7 +1,15 @@
 ---
 import PageLayout from '../../components/PageLayout.astro';
 
-const { slug } = Astro.params;
+export async function getStaticPaths() {
+	return [
+		{ params: { slug: 'claes-bangs-dracula' } },
+		{ params: { slug: 'alcohol-the-old-companion' } },
+		{ params: { slug: 'the-solar-field' } },
+	];
+}
+
+const slug = Astro.params?.slug;
 
 // In a real implementation, you'd fetch the post content from a content collection
 // For now, this is a placeholder structure
@@ -494,9 +502,9 @@ const getPost = (slug: string) => {
 	return posts[slug];
 };
 
-const post = getPost(slug || '');
+const post = slug != null ? getPost(slug) : null;
 
-if (!post) {
+if (slug != null && !post) {
 	return Astro.redirect('/blog');
 }
 ---
